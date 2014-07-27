@@ -1,0 +1,4 @@
+C:\Users\dom\Desktop\myyou\myyou\muyou.Lib\bin\Release\muyou.Lib.dll
+C:\Users\dom\Desktop\myyou\myyou\muyou.Lib\bin\Release\muyou.Lib.pdb
+C:\Users\dom\Desktop\myyou\myyou\muyou.Lib\obj\Release\muyou.Lib.dll
+C:\Users\dom\Desktop\myyou\myyou\muyou.Lib\obj\Release\muyou.Lib.pdb

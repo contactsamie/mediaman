@@ -1,0 +1,11 @@
+C:\Users\dom\Desktop\myyou\myyou\myyou\bin\Release\myyou.exe.config
+C:\Users\dom\Desktop\myyou\myyou\myyou\bin\Release\myyou.exe
+C:\Users\dom\Desktop\myyou\myyou\myyou\bin\Release\myyou.pdb
+C:\Users\dom\Desktop\myyou\myyou\myyou\bin\Release\muyou.Lib.dll
+C:\Users\dom\Desktop\myyou\myyou\myyou\bin\Release\muyou.Lib.pdb
+C:\Users\dom\Desktop\myyou\myyou\myyou\obj\Release\myyou.csprojResolveAssemblyReference.cache
+C:\Users\dom\Desktop\myyou\myyou\myyou\obj\Release\myyou.Form1.resources
+C:\Users\dom\Desktop\myyou\myyou\myyou\obj\Release\myyou.Properties.Resources.resources
+C:\Users\dom\Desktop\myyou\myyou\myyou\obj\Release\myyou.csproj.GenerateResource.Cache
+C:\Users\dom\Desktop\myyou\myyou\myyou\obj\Release\myyou.exe
+C:\Users\dom\Desktop\myyou\myyou\myyou\obj\Release\myyou.pdb
