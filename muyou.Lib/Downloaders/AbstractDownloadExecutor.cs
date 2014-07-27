@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Threading.Tasks;
 
 namespace muyou.Lib.Downloaders
 {
@@ -22,32 +24,42 @@ namespace muyou.Lib.Downloaders
             try
             {
                 progress.Invoke(100, "Download started");
-
-                currentSession.DownloadList.FindAll(x => x.DownLoadState == DownLoadState.UNKNOWN).ForEach(download =>
+                var toBeProcessed = currentSession.DownloadList.FindAll(x => x.DownLoadState == DownLoadState.UNKNOWN);
+                Parallel.ForEach(toBeProcessed, download =>
                 {
+
                     download.DownLoadState = DownLoadState.NOT_YET_DOWNLOADED;
                     try
                     {
-                        ProcessDownloadList(download.DownloadUrl, download.BuildLocalDownloadFileName(), delegate(int level, String message)
-                        {
-                            try
+                        download.DownloadStatus = "download started ..";
+                        ProcessDownloadList(download.DownloadUrl, download.BuildLocalDownloadFileName(),
+                            delegate(int level, String message)
                             {
-                                progress.Invoke(level, message);
-                            }
-                            catch (Exception e)
-                            {
-                                ProgressIndicatorExceptions.Add(e);
-                            }
-                        });
+                                try
+                                {
+                                    progress.Invoke(level, message);
+                                    download.DownloadStatus = message;
+                                }
+                                catch (Exception e)
+                                {
+                                    download.DownloadStatus = "";
+                                    ProgressIndicatorExceptions.Add(e);
+                                }
+                            });
                         download.DownLoadState = DownLoadState.DOWNLOADED;
+                        download.TryUpdateFileInfo();
+                        download.DownloadStatus = "download successfull";
                     }
                     catch (Exception)
                     {
                         progress.Invoke(100, "unable to download file");
+                        download.DownloadStatus = "unable to download file";
                         download.DownLoadState = DownLoadState.UNABLE_TO_DOWNLOAD;
                     }
                 });
+              // toBeProcessed.ForEach();
                 progress.Invoke(100, "Download complete");
+               
             }
             catch (Exception e)
             {

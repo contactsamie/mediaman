@@ -41,7 +41,7 @@
   <ItemGroup>
     <Compile Include="Downloaders\AbstractDownloadExecutor.cs" />
     <Compile Include="DownloadChain.cs" />
-    <Compile Include="Downloaders\ImageDownloadExecutor.cs" />
+    <Compile Include="Downloaders\FileDownloadExecutor.cs" />
     <Compile Include="Models\Downloads.cs" />
     <Compile Include="Models\ResourceType.cs" />
     <Compile Include="SessionHandlers\SanitizeDirectory.cs" />
