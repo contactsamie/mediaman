@@ -1,0 +1,7 @@
+C:\Users\dom\Documents\GitHub\mediaman\WinFormHelper\bin\Release\WinFormHelper.dll
+C:\Users\dom\Documents\GitHub\mediaman\WinFormHelper\bin\Release\WinFormHelper.pdb
+C:\Users\dom\Documents\GitHub\mediaman\WinFormHelper\bin\Release\muyou.Lib.dll
+C:\Users\dom\Documents\GitHub\mediaman\WinFormHelper\bin\Release\muyou.Lib.pdb
+C:\Users\dom\Documents\GitHub\mediaman\WinFormHelper\obj\Release\WinFormHelper.csprojResolveAssemblyReference.cache
+C:\Users\dom\Documents\GitHub\mediaman\WinFormHelper\obj\Release\WinFormHelper.dll
+C:\Users\dom\Documents\GitHub\mediaman\WinFormHelper\obj\Release\WinFormHelper.pdb

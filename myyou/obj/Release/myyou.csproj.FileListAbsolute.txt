@@ -20,3 +20,9 @@ C:\Users\dom\Documents\GitHub\mediaman\myyou\bin\Release\myyou.exe
 C:\Users\dom\Documents\GitHub\mediaman\myyou\bin\Release\myyou.pdb
 C:\Users\dom\Documents\GitHub\mediaman\myyou\bin\Release\muyou.Lib.dll
 C:\Users\dom\Documents\GitHub\mediaman\myyou\bin\Release\muyou.Lib.pdb
+C:\Users\dom\Documents\GitHub\mediaman\myyou\bin\Release\skin.dll
+C:\Users\dom\Documents\GitHub\mediaman\myyou\bin\Release\skin.pdb
+C:\Users\dom\Documents\GitHub\mediaman\myyou\bin\Release\ISkinContract.dll
+C:\Users\dom\Documents\GitHub\mediaman\myyou\bin\Release\WinFormHelper.dll
+C:\Users\dom\Documents\GitHub\mediaman\myyou\bin\Release\ISkinContract.pdb
+C:\Users\dom\Documents\GitHub\mediaman\myyou\bin\Release\WinFormHelper.pdb

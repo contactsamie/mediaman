@@ -19,6 +19,8 @@ namespace muyou.Lib
         public readonly string OthersFolder = "Others";
 
         public readonly string SessionFolder = "sessions";
+        public  string TmpFolder = "tmp";
+
         public readonly string SessionFile = "session.ses";
 
         public DirectorySanitizer(AbstractDirectoryManager fileManager, AbstractDirectoryManager folderManager)
@@ -28,9 +30,11 @@ namespace muyou.Lib
             FileManager = fileManager;
             FolderManager = folderManager;
 
+
             SongsFolder = WorkingDirectory + "\\" + SongsFolder;
             VideoFolder = WorkingDirectory + "\\" + VideoFolder;
             SessionFolder = WorkingDirectory + "\\" + SessionFolder;
+            TmpFolder = SessionFolder + "\\" + TmpFolder;
 
             ImageFolder = WorkingDirectory + "\\" + ImageFolder;
             ZipFolder = WorkingDirectory + "\\" + ZipFolder;
@@ -51,9 +55,13 @@ namespace muyou.Lib
             FolderManager.CreateIfNotInExistence(DocsFolder);
 
             FolderManager.CreateIfNotInExistence(OthersFolder);
+          
+
 
             FolderManager.CreateIfNotInExistence(SessionFolder);
-            FileManager.CreateIfNotInExistence(SessionFile);
+            FileManager.CreateIfNotInExistence(SessionFile);  
+            
+            FolderManager.CreateIfNotInExistence(TmpFolder);
         }
     }
 }

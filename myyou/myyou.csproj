@@ -81,9 +81,21 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ISkinContract\ISkinContract.csproj">
+      <Project>{49873e72-8f27-4822-989c-b989dd6637c8}</Project>
+      <Name>ISkinContract</Name>
+    </ProjectReference>
     <ProjectReference Include="..\muyou.Lib\muyou.Lib.csproj">
       <Project>{0e30db80-1d1b-42a8-bbbf-7127b10ccaea}</Project>
       <Name>muyou.Lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\skin\skin.csproj">
+      <Project>{628b49fc-b90e-4f5d-a1d3-8efd1a9bd405}</Project>
+      <Name>skin</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WinFormHelper\WinFormHelper.csproj">
+      <Project>{9EDE80A2-50B3-44B5-9033-5F45C294CFAA}</Project>
+      <Name>WinFormHelper</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

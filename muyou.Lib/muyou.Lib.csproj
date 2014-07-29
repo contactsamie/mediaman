@@ -57,9 +57,6 @@
     <Compile Include="Models\WorkingSession.cs" />
     <Compile Include="SessionHandlers\WorkingSessionManager.cs" />
     <Compile Include="SessionHandlers\WorkingSessionManagerFactory.cs" />
-    <Compile Include="Winform\AbstractControl.cs" />
-    <Compile Include="Winform\WinFormControlSet.cs" />
-    <Compile Include="Winform\WinformUtility.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

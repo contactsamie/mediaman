@@ -1,31 +1,31 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel;
+using muyou.Lib;
 
-namespace muyou.Lib.Winform
+namespace WinFormHelper.Winform
 {
     public class WinformModel
     {
-        private WinFormControlSet WinFormControlSet { set; get; }
+        private Winform.WinFormControlSet WinFormControlSet { set; get; }
 
         private WorkingSessionManager SessionManager { set; get; }
+
         private BackgroundWorker BackgroundWorkerThatRunsTheDownload { set; get; }
 
-        public WinformModel(WorkingSessionManager sessionManager, WinFormControlSet winFormControlSet)
+        public WinformModel(WorkingSessionManager sessionManager, Winform.WinFormControlSet winFormControlSet)
         {
             SessionManager = sessionManager;
-            WinFormControlSet = new WinFormControlSet
+            WinFormControlSet = new Winform.WinFormControlSet
             {
-                UrlEntryTextBoxToCreateDownload = winFormControlSet.UrlEntryTextBoxToCreateDownload,
                 DataGridViewToDisplayTheDownloads = winFormControlSet.DataGridViewToDisplayTheDownloads
-                 
             };
-            BackgroundWorkerThatRunsTheDownload=new BackgroundWorker();
-           BackgroundWorkerThatRunsTheDownload.WorkerSupportsCancellation = true;
-           BackgroundWorkerThatRunsTheDownload.WorkerReportsProgress = true;
+            BackgroundWorkerThatRunsTheDownload = new BackgroundWorker();
+            BackgroundWorkerThatRunsTheDownload.WorkerSupportsCancellation = true;
+            BackgroundWorkerThatRunsTheDownload.WorkerReportsProgress = true;
 
-           BackgroundWorkerThatRunsTheDownload.DoWork += BackgroundWorkerThatRunsTheDownload_DoWork;
-           BackgroundWorkerThatRunsTheDownload.RunWorkerCompleted += BackgroundWorkerThatRunsTheDownload_RunWorkerCompleted;
-           BackgroundWorkerThatRunsTheDownload.ProgressChanged += BackgroundWorkerThatRunsTheDownload_ProgressChanged;
+            BackgroundWorkerThatRunsTheDownload.DoWork += BackgroundWorkerThatRunsTheDownload_DoWork;
+            BackgroundWorkerThatRunsTheDownload.RunWorkerCompleted += BackgroundWorkerThatRunsTheDownload_RunWorkerCompleted;
+            BackgroundWorkerThatRunsTheDownload.ProgressChanged += BackgroundWorkerThatRunsTheDownload_ProgressChanged;
 
             SessionManager.LoadSession();
             UpdateGrid();
@@ -48,16 +48,16 @@ namespace muyou.Lib.Winform
         {
             ((WorkingSessionManager)e.Argument).Downloader.ExecuteAllDownloads((ex, message) =>
             {
-               BackgroundWorkerThatRunsTheDownload.ReportProgress(100, message + " : " + (ex == null ? "" : ex.Message));
+                BackgroundWorkerThatRunsTheDownload.ReportProgress(100, message + " : " + (ex == null ? "" : ex.Message));
             }, (p, message) =>
             {
-               BackgroundWorkerThatRunsTheDownload.ReportProgress(p, message);
+                BackgroundWorkerThatRunsTheDownload.ReportProgress(p, message);
             });
         }
 
         public void RunDownloads()
         {
-           BackgroundWorkerThatRunsTheDownload.RunWorkerAsync(SessionManager);
+            BackgroundWorkerThatRunsTheDownload.RunWorkerAsync(SessionManager);
         }
 
         public void CreateDownload(string url)

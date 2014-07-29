@@ -1,0 +1,4 @@
+C:\Users\dom\Documents\GitHub\mediaman\ISkinContract\bin\Release\ISkinContract.dll
+C:\Users\dom\Documents\GitHub\mediaman\ISkinContract\bin\Release\ISkinContract.pdb
+C:\Users\dom\Documents\GitHub\mediaman\ISkinContract\obj\Release\ISkinContract.dll
+C:\Users\dom\Documents\GitHub\mediaman\ISkinContract\obj\Release\ISkinContract.pdb

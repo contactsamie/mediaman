@@ -37,7 +37,7 @@ namespace muyou.Lib
                 ImageUrl = ImageUrl,
                 LocalExtension = ext,
                 LocalFileName = filename,
-                LocalPath = DirectorySanitizer.SessionFolder+"\\"+id,
+                LocalPath = DirectorySanitizer.TmpFolder+"\\"+id,
                 NameOfDownload = NameOfDownload,
                 ResourceType = ResourceType,
                 DownloadUrl = DownloadUrl,

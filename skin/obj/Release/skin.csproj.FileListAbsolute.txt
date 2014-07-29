@@ -1,0 +1,11 @@
+C:\Users\dom\Documents\GitHub\mediaman\skin\bin\Release\skin.dll
+C:\Users\dom\Documents\GitHub\mediaman\skin\bin\Release\skin.pdb
+C:\Users\dom\Documents\GitHub\mediaman\skin\obj\Release\skin.csproj.GenerateResource.Cache
+C:\Users\dom\Documents\GitHub\mediaman\skin\obj\Release\skin.dll
+C:\Users\dom\Documents\GitHub\mediaman\skin\obj\Release\skin.pdb
+C:\Users\dom\Documents\GitHub\mediaman\skin\obj\Release\skin.DefaultSkin.resources
+C:\Users\dom\Documents\GitHub\mediaman\skin\bin\Release\muyou.Lib.dll
+C:\Users\dom\Documents\GitHub\mediaman\skin\bin\Release\muyou.Lib.pdb
+C:\Users\dom\Documents\GitHub\mediaman\skin\obj\Release\skin.csprojResolveAssemblyReference.cache
+C:\Users\dom\Documents\GitHub\mediaman\skin\bin\Release\ISkinContract.dll
+C:\Users\dom\Documents\GitHub\mediaman\skin\bin\Release\ISkinContract.pdb
