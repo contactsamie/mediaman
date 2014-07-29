@@ -4,6 +4,7 @@ using muyou.Lib;
 using skin;
 using System;
 using System.Windows.Forms;
+using skinNew;
 using WinFormHelper.Winform;
 
 namespace myyou
@@ -13,7 +14,8 @@ namespace myyou
         public Form1()
         {
             InitializeComponent();
-            Skin = new DefaultSkin();
+          //  Skin = new DefaultSkin();
+            Skin = new SkinNewer();
         }
 
         private ISkin Skin { set; get; }

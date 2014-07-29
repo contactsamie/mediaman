@@ -4,16 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{053EA6CD-E0D7-49F7-8388-1A5484E8AB86}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
+    <ProjectGuid>{E001229D-274F-43FC-B61B-5673F58965E4}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>myyou</RootNamespace>
-    <AssemblyName>myyou</AssemblyName>
+    <RootNamespace>skinNew</RootNamespace>
+    <AssemblyName>skinNew</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -32,74 +30,47 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-      <EmbedInteropTypes>True</EmbedInteropTypes>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="SkinNewer.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Program.cs" />
+    <Compile Include="SkinNewer.Designer.cs">
+      <DependentUpon>SkinNewer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-    <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-    <Compile Include="Properties\Settings.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Settings.settings</DependentUpon>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-    </Compile>
+    <EmbeddedResource Include="SkinNewer.resx">
+      <DependentUpon>SkinNewer.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="Resources\2102748.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ISkinContract\ISkinContract.csproj">
-      <Project>{49873e72-8f27-4822-989c-b989dd6637c8}</Project>
+      <Project>{49873E72-8F27-4822-989C-B989DD6637C8}</Project>
       <Name>ISkinContract</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\muyou.Lib\muyou.Lib.csproj">
-      <Project>{0e30db80-1d1b-42a8-bbbf-7127b10ccaea}</Project>
-      <Name>muyou.Lib</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\skinNew\skinNew.csproj">
-      <Project>{e001229d-274f-43fc-b61b-5673f58965e4}</Project>
-      <Name>skinNew</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\skin\skin.csproj">
-      <Project>{628b49fc-b90e-4f5d-a1d3-8efd1a9bd405}</Project>
-      <Name>skin</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\WinFormHelper\WinFormHelper.csproj">
-      <Project>{9EDE80A2-50B3-44B5-9033-5F45C294CFAA}</Project>
-      <Name>WinFormHelper</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

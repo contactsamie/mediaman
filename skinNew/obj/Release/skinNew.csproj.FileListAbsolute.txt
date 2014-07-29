@@ -1,0 +1,10 @@
+C:\Users\dom\Documents\GitHub\mediaman\skinNew\bin\Release\skinNew.dll
+C:\Users\dom\Documents\GitHub\mediaman\skinNew\bin\Release\skinNew.pdb
+C:\Users\dom\Documents\GitHub\mediaman\skinNew\bin\Release\ISkinContract.dll
+C:\Users\dom\Documents\GitHub\mediaman\skinNew\bin\Release\ISkinContract.pdb
+C:\Users\dom\Documents\GitHub\mediaman\skinNew\obj\Release\skinNew.csprojResolveAssemblyReference.cache
+C:\Users\dom\Documents\GitHub\mediaman\skinNew\obj\Release\skinNew.Properties.Resources.resources
+C:\Users\dom\Documents\GitHub\mediaman\skinNew\obj\Release\skinNew.SkinNewer.resources
+C:\Users\dom\Documents\GitHub\mediaman\skinNew\obj\Release\skinNew.csproj.GenerateResource.Cache
+C:\Users\dom\Documents\GitHub\mediaman\skinNew\obj\Release\skinNew.dll
+C:\Users\dom\Documents\GitHub\mediaman\skinNew\obj\Release\skinNew.pdb
