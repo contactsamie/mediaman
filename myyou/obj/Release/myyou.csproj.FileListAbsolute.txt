@@ -28,3 +28,5 @@ C:\Users\dom\Documents\GitHub\mediaman\myyou\bin\Release\ISkinContract.pdb
 C:\Users\dom\Documents\GitHub\mediaman\myyou\bin\Release\WinFormHelper.pdb
 C:\Users\dom\Documents\GitHub\mediaman\myyou\bin\Release\skinNew.dll
 C:\Users\dom\Documents\GitHub\mediaman\myyou\bin\Release\skinNew.pdb
+C:\Users\dom\Documents\GitHub\mediaman\myyou\bin\Release\ObjectListView.dll
+C:\Users\dom\Documents\GitHub\mediaman\myyou\bin\Release\ObjectListView.pdb

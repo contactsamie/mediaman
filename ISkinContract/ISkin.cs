@@ -9,7 +9,7 @@ namespace ISkinContract
 {
     public interface ISkin
     {
-        System.Windows.Forms.DataGridView DataGridViewOfDownloadList { set; get; }
+       DataGridView DataGridViewOfDownloadList { set; get; }
 
         ToolStripTextBox DownloadUrlEntryControl { set; get; }
        ToolStripMenuItem CreateDownloadAction { set; get; }

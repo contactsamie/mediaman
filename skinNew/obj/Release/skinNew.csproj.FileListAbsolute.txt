@@ -8,3 +8,5 @@ C:\Users\dom\Documents\GitHub\mediaman\skinNew\obj\Release\skinNew.SkinNewer.res
 C:\Users\dom\Documents\GitHub\mediaman\skinNew\obj\Release\skinNew.csproj.GenerateResource.Cache
 C:\Users\dom\Documents\GitHub\mediaman\skinNew\obj\Release\skinNew.dll
 C:\Users\dom\Documents\GitHub\mediaman\skinNew\obj\Release\skinNew.pdb
+C:\Users\dom\Documents\GitHub\mediaman\skinNew\bin\Release\ObjectListView.dll
+C:\Users\dom\Documents\GitHub\mediaman\skinNew\bin\Release\ObjectListView.pdb

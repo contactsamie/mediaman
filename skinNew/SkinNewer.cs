@@ -7,21 +7,30 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BrightIdeasSoftware;
 using ISkinContract;
 
 namespace skinNew
 {
     public partial class SkinNewer: UserControl, ISkin
     {
-
-
+      
         public SkinNewer()
         {
             InitializeComponent();
-            DataGridViewOfDownloadList = dataGridView1;
+            DataGridViewOfDownloadList =new DataGridView();
             CreateDownloadAction = editToolStripMenuItem;
             RunDownloadAction = helpToolStripMenuItem;
             DownloadUrlEntryControl = toolStripTextBox1;
+            DataGridViewOfDownloadList.DataSourceChanged += dg_DataSourceChanged;
+        
+        }
+
+        void dg_DataSourceChanged(object sender, EventArgs e)
+        {
+            var l = (List<object>)DataGridViewOfDownloadList.DataSource;
+            dataGridView1.SetObjects(l);
+          //  dataGridView1.DataBindings.Add("DownLoadState", l, "DownLoadState");
         }
 
         public DataGridView DataGridViewOfDownloadList { set; get; }
